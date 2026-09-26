@@ -3,18 +3,22 @@ void main() {
   var num2 = 13.50;
 
   print("Apartado A");
+  var resultadoA = [];
   for (var i = 0; i <= num1; i++) {
     if (i % 2 == 0) {
-      print(i);
+      resultadoA.add(i);
     }
   }
+  print(resultadoA.join(", "));
   var counter = num2;
   print("");
   print("Apartado B");
+  var resultadoB = [];
   while (counter >= 0) {
-    print(counter);
+    resultadoB.add(counter);
     counter--;
   }
+  print(resultadoB.join(", "));
 
   var num3 = num1;
   print("");
